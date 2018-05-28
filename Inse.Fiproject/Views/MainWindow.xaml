@@ -1,0 +1,14 @@
+﻿<controls:FrameWindow x:Class="Inse.Fiproject.Views.MainWindow"
+                      x:Name="FrameWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Inse.Fiproject.Wpf.Mvvm;assembly=Inse.Fiproject.Wpf"
+                      xmlns:controls="clr-namespace:Inse.Fiproject.Wpf.Controls;assembly=Inse.Fiproject.Wpf"
+                      mvvm:AttachedBinder.Loaded="{Binding FrameWindowLoadedHandler, Mode=OneTime}"
+                      mvvm:AttachedBinder.DependencyObjectGetter="{Binding This}"
+                      Title="Inse.Fiproject" Width="800" Height="600" Style="{StaticResource FrameWindowTheme}">
+    
+        
+</controls:FrameWindow>

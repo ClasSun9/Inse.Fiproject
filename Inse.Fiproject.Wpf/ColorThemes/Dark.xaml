@@ -1,0 +1,251 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Inse.Fiproject.Wpf.ColorThemes">
+
+    <Color x:Key="AccentColor">#FF6761F7</Color>
+    <SolidColorBrush x:Key="Accent" Color="{StaticResource AccentColor}" />
+
+    <!--
+    **
+    **  Window
+    **
+    -->
+
+    <Color x:Key="WindowBackgroundColor">#FF2D2D2D</Color>
+    <SolidColorBrush x:Key="WindowBackground" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="WindowForeground" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="WindowBorderBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="WindowMenuBackground" Color="{StaticResource OverlayBackgroundColor}" />
+    <SolidColorBrush x:Key="WindowCaptionBackground" Color="{StaticResource OverlayBackgroundColor}" />
+    <SolidColorBrush x:Key="WindowCaptionSeparatorForeground" Color="#55FFFFFF" />
+
+    <!--
+    **
+    **  OverlayBackground
+    **
+    -->
+    
+    <Color x:Key="OverlayBackgroundColor">#992D2D2D</Color>
+    <SolidColorBrush x:Key="OverlayBackground" Color="{StaticResource OverlayBackgroundColor}" />
+    
+    <!--
+    **
+    **  Foreground
+    **
+    -->
+
+    <SolidColorBrush x:Key="Foreground" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="AccentForeground" Color="#FF0070FF" />
+
+    <!--
+    **
+    **  Background
+    **
+    -->
+
+    <SolidColorBrush x:Key="Background" Color="#3D3D3D" />
+
+    <!--
+    **
+    **  ItemSeparator Foreground
+    **
+    -->
+
+    <SolidColorBrush x:Key="ItemSeparatorForeground" Color="#99FFFFFF" />
+
+    <!--
+    **
+    **  Button ColorThemes
+    ** 
+    -->
+
+    <SolidColorBrush x:Key="ButtonBackgroundNormal"    Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ButtonBackgroundHover"     Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ButtonBackgroundPressed"   Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBackgroundFocused"   Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ButtonBackgroundDisabled"  Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ButtonForegroundNormal"    Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ButtonForegroundHover"     Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ButtonForegroundPressed"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ButtonForegroundFocused"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ButtonForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="ButtonBorderBrushNormal"   Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ButtonBorderBrushHover"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ButtonBorderBrushPressed"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBorderBrushFocused"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonBorderBrushDisabled" Color="#FF3D3D3D" />
+
+    <SolidColorBrush x:Key="SystemButtonBackgroundNormal"    Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundHover"     Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundPressed"   Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundFocused"   Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SystemButtonBackgroundDisabled"  Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SystemButtonForegroundNormal"    Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="SystemButtonForegroundHover"     Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="SystemButtonForegroundPressed"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="SystemButtonForegroundFocused"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="SystemButtonForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="SystemButtonBorderBrushNormal"   Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SystemButtonBorderBrushHover"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="SystemButtonBorderBrushPressed"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="SystemButtonBorderBrushFocused"  Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SystemButtonBorderBrushDisabled" Color="{StaticResource WindowBackgroundColor}" />
+
+    <SolidColorBrush x:Key="SystemCloseButtonBackgroundPressed"  Color="#FFFF0000" />
+    <SolidColorBrush x:Key="SystemCloseButtonBorderBrushPressed" Color="#FFFF0000" />
+
+    <SolidColorBrush x:Key="ForegroundButtonForegroundNormal"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ForegroundButtonForegroundHover"    Color="#FFCCCCCC" />
+    <SolidColorBrush x:Key="ForegroundButtonForegroundPressed"  Color="#FFAAAAAA" />
+    <SolidColorBrush x:Key="ForegroundButtonForegroundDisabled" Color="#FF999999" />
+
+    <!--
+    **
+    **  ToggleButton
+    **
+    -->
+
+    <SolidColorBrush x:Key="ToggleButtonBackgroundNormal" Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundHover" Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundPressed" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundFocused" Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundDisabled" Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundNormal" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundHover" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundFocused" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundDisabled" Color="#FF999999" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushNormal" Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushHover" Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushPressed" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushFocused" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushDisabled" Color="#FF3D3D3D" />
+
+    <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedNormal" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedHover" Color="#FF5751E7" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedPressed" Color="#FF4741D7" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundCheckedNormal" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundCheckedHover" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedNormal" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedHover" Color="#FF5751E7" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedPressed" Color="#FF4741D7" />
+    
+    <!--
+    **
+    **  TextBox
+    **
+    -->
+
+    <SolidColorBrush x:Key="TextBoxCaretBrush"          Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="TextBoxSelectionBrush"      Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="TextBoxBackgroundNormal"    Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="TextBoxBackgroundHover"     Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="TextBoxBackgroundFocused"   Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="TextBoxBackgroundReadOnly"  Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="TextBoxBackgroundDisabled"  Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="TextBoxForegroundNormal"    Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="TextBoxForegroundHover"     Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="TextBoxForegroundFocused"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="TextBoxForegrondReadOnly"   Color="#FF999999" />
+    <SolidColorBrush x:Key="TextBoxForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="TextBoxBorderBrushNormal"   Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="TextBoxBorderBrushHover"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="TextBoxBorderBrushFocused"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="TextBoxBorderBrushReadOnly" Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="TextBoxBorderBrushDisabled" Color="#FF3D3D3D" />
+
+    <SolidColorBrush x:Key="UnderlineTextBoxCaretBrush"          Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="UnderlineTextBoxSelectionBrush"      Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBackgroundNormal"    Color="Transparent" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBackgroundHover"     Color="Transparent" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBackgroundFocused"   Color="Transparent" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBackgroundReadOnly"  Color="Transparent" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBackgroundDisabled"  Color="Transparent" />
+    <SolidColorBrush x:Key="UnderlineTextBoxForegroundNormal"    Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="UnderlineTextBoxForegroundHover"     Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="UnderlineTextBoxForegroundFocused"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="UnderlineTextBoxForegroundReadOnly"  Color="#FF999999" />
+    <SolidColorBrush x:Key="UnderlineTextBoxForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBorderBrushNormal"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBorderBrushHover"    Color="#FFCCCCCC" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBorderBrushFocused"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBorderBrushReadOnly" Color="#FF999999" />
+    <SolidColorBrush x:Key="UnderlineTextBoxBorderBrushDisabled" Color="#FF999999" />
+
+    <!--
+    **
+    **  ToolTip
+    **
+    -->
+    
+    <SolidColorBrush x:Key="ToolTipBackground" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ToolTipForeground" Color="#FFFFFFFF" />
+
+    <!--
+    **
+    **  PasswordBox
+    **
+    -->
+
+    <SolidColorBrush x:Key="PasswordBoxCaretBrush"          Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="PasswordBoxSelectionBrush"      Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="PasswordBoxBackgroundNormal"    Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="PasswordBoxBackgroundHover"     Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="PasswordBoxBackgroundFocused"   Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="PasswordBoxBackgroundDisabled"  Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="PasswordBoxForegroundNormal"    Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="PasswordBoxForegroundHover"     Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="PasswordBoxForegroundFocused"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="PasswordBoxForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="PasswordBoxBorderBrushNormal"   Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="PasswordBoxBorderBrushHover"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="PasswordBoxBorderBrushFocused"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="PasswordBoxBorderBrushDisabled" Color="#FF3D3D3D" />
+
+    <!--
+    **
+    **  Watermark
+    **
+    -->
+
+    <SolidColorBrush x:Key="WatermarkForeground" Color="#FFDDDDDD" />
+
+    <!--
+    **
+    **  ScrollBar
+    **
+    -->
+
+    <SolidColorBrush x:Key="ScrollBarBackground" Color="#FF3D3D3D" />
+
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundNormal"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundHover"     Color="#FF5D5D5D" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundDragging"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ScrollBarThumbBackgroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundNormal"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundHover"     Color="#FF5D5D5D" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundDragging"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ScrollBarThumbForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="ScrollBarThumbBorderBrushNormal"   Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ScrollBarThumbBorderBrushHover"    Color="#FF5D5D5D" />
+    <SolidColorBrush x:Key="ScrollBarThumbBorderBrushDragging" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ScrollBarThumbBorderBrushDisabled" Color="#FF999999" />
+
+    <SolidColorBrush x:Key="ScrollBarButtonBackgroundNormal"    Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ScrollBarButtonBackgroundHover"     Color="#FF5D5D5D" />
+    <SolidColorBrush x:Key="ScrollBarButtonBackgroundPressed"   Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ScrollBarButtonBackgroundFocused"   Color="#FF3D3D3D" />
+    <SolidColorBrush x:Key="ScrollBarButtonBackgroundDisabled"  Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ScrollBarButtonForegroundNormal"    Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ScrollBarButtonForegroundHover"     Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ScrollBarButtonForegroundPressed"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ScrollBarButtonForegroundFocused"   Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="ScrollBarButtonForegroundDisabled"  Color="#FF999999" />
+    <SolidColorBrush x:Key="ScrollBarButtonBorderBrushNormal"   Color="#FF4D4D4D" />
+    <SolidColorBrush x:Key="ScrollBarButtonBorderBrushHover"    Color="#FF5D5D5D" />
+    <SolidColorBrush x:Key="ScrollBarButtonBorderBrushPressed"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ScrollBarButtonBorderBrushFocused"  Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="ScrollBarButtonBorderBrushDisabled" Color="#FF4D4D4D" />
+
+</ResourceDictionary>

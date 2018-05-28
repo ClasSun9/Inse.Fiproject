@@ -1,0 +1,194 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Inse.Fiproject.Wpf.Assets">
+
+
+    <Style x:Key="ButtonBaseStyle" TargetType="Button">
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Padding="{TemplateBinding Padding}"
+                            Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- 
+    **
+    **  basic button style
+    **
+    -->
+
+    <Style TargetType="Button" BasedOn="{StaticResource ButtonBaseStyle}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundNormal}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrushNormal}" />
+        <Setter Property="BorderThickness" Value="2" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonBackgroundHover}" />
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundHover}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrushHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonBackgroundPressed}" />
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundPressed}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrushPressed}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <!-- <Setter Property="Background" Value="{DynamicResource ButtonBackgroundFocused}" /> -->
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundFocused}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrushFocused}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ButtonBackgroundDisabled}" />
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundDisabled}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderBrushDisabled}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 
+    **
+    **  system button style
+    **
+    -->
+
+    <Style x:Key="SystemButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonBaseStyle}">
+        <Setter Property="Background" Value="{DynamicResource SystemButtonBackgroundNormal}" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemButtonForegroundNormal}" />
+        <Setter Property="BorderThickness" Value="0" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SystemButtonBackgroundHover}" />
+                <Setter Property="Foreground" Value="{DynamicResource SystemButtonForegroundHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SystemButtonBackgroundPressed}" />
+                <Setter Property="Foreground" Value="{DynamicResource SystemButtonForegroundPressed}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <!-- <Setter Property="Background" Value="{DynamicResource SystemButtonBackgroundFocused}" /> -->
+                <Setter Property="Foreground" Value="{DynamicResource SystemButtonForegroundFocused}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{DynamicResource SystemButtonBackgroundDisabled}" />
+                <Setter Property="Foreground" Value="{DynamicResource SystemButtonForegroundDisabled}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 
+    **
+    **  system close button style
+    **
+    -->
+
+    <Style x:Key="SystemCloseButtonStyle" TargetType="Button" BasedOn="{StaticResource SystemButtonStyle}">
+        <Style.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SystemCloseButtonBackgroundPressed}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--
+
+    <Style x:Key="ReverseButtonStyle" TargetType="Button" BasedOn="{StaticResource ButtonBaseStyle}">
+        <Setter Property="Background" Value="{DynamicResource ReverseButtonBackgroundNormal}" />
+        <Setter Property="Foreground" Value="{DynamicResource ReverseButtonForegroundNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ReverseButtonBorderBrushNormal}" />
+        <Setter Property="BorderThickness" Value="3" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ReverseButtonBackgroundHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ReverseButtonBackgroundPressed}" />
+                <Setter Property="Foreground" Value="{DynamicResource ReverseButtonForegroundPressed}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ReverseButtonBackgroundDisabled}" />
+                <Setter Property="Foreground" Value="{DynamicResource ReverseButtonForegroundDisabled}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    -->
+
+    <!-- 
+    **
+    **  foreground button base style
+    **
+    -->
+
+    <Style x:Key="ForegroundButtonBaseStyle" TargetType="Button" BasedOn="{StaticResource ButtonBaseStyle}">
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Padding="{TemplateBinding Padding}"
+                            Background="Transparent" 
+                            BorderBrush="Transparent" 
+                            BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- 
+    **
+    **  foreground button style
+    **
+    -->
+
+    <Style x:Key="ForegroundButtonStyle" TargetType="Button" BasedOn="{StaticResource ForegroundButtonBaseStyle}">
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundButtonForegroundNormal}" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundButtonForegroundHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundButtonForegroundPressed}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundButtonForegroundFocused}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundButtonForegroundDisabled}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- 
+    **
+    **  system foreground button style
+    **
+    -->
+
+    <Style x:Key="SystemForegroundButtonStyle" TargetType="Button" BasedOn="{StaticResource ForegroundButtonStyle}" />
+
+</ResourceDictionary>
